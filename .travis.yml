@@ -1,8 +1,4 @@
-deploy:
-  provider: azure_web_apps
-  username: azure_deployment_user       # If AZURE_WA_USERNAME isn't set
-  password: azure_deployment_password   # If AZURE_WA_PASSWORD isn't set
-  site: azure_deployment_sitename       # If AZURE_WA_SITE isn't set
+
 language: php
 
 php:
@@ -11,5 +7,11 @@ php:
 #script: phpunit
 before_script: composer require atoum/atoum
 script: vendor/bin/atoum
+
+deploy:
+  provider: azure_web_apps
+  username: azure_deployment_user       # If AZURE_WA_USERNAME isn't set
+  password: azure_deployment_password   # If AZURE_WA_PASSWORD isn't set
+  site: azure_deployment_sitename       # If AZURE_WA_SITE isn't set
 
 
