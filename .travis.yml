@@ -12,7 +12,7 @@ deploy:
   provider: azure_web_apps
   username: "jambor1"       # If AZURE_WA_USERNAME isn't set
   password: "123Aking"   # If AZURE_WA_PASSWORD isn't set
-  site: "http://travistestja.azurewebsites.net"       # If AZURE_WA_SITE isn't set
+  site: "travistestja"       # If AZURE_WA_SITE isn't set
   verbose: true
 
 
